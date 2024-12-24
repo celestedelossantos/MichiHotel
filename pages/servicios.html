@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 	<title>Servicios - Gatitos Hotel</title>
 	<link rel="icon" href="../assets/favicon.png"/>
 </head>
@@ -16,9 +17,11 @@
 <body>
 	<header>
 		<a href="../index.html"><img src="../assets/logo-oficial.png" alt="gatito-navegacion"/></a>
+		<img class="img__header" src="../assets/menus.png" alt="menu" id="burger-menu">
 		<nav class="nav">
 			<ul>
-				<li class="nav__list"><a class="nav__link" href="../index.html">Inicio</a></li>
+				<li class="nav__list"><a id="loginButton" class="nav__link" href="../index.html">Login</a></li>
+				<li class="nav__list"><a id="signUpButton" class="nav__link" href="pages/registrarse.html">Sign Up</a></li>
 				<li class="nav__list"><a class="nav__link" href="contacto.html">Contacto</a></li>
 				<li class="nav__list"><a class="nav__link" href="habitaciones.html">Habitaciones</a></li>
 				<li class="nav__list"><a class="nav__link" href="servicios.html">Servicios</a></li>
@@ -77,7 +80,7 @@
 		<section>
 			<div class="servicios__tarjeta">
 				<h3 class="servicios__tarjeta__titulo">El servicio incluye: </h3>
-				
+
 				<ul class="servicios__tarjeta__lista">
 				  <li><span style="font-weight: 400;"><strong>Cepillado:</strong>&nbsp;puede ser diario, o semanal en función del tipo de pelo del animal, pero deberá de traer su propio cepillo o carda. Solo se realizará mientras sea algo placentero para él, ya que intentamos minimizar las situaciones de stress.</span></li>
 				  <li><strong>Limpieza de ojos:</strong> sobre todo en gatos tipo persa o exótico (O simplemente gatitos que generen muchas legañas) podrán tener una limpieza diaria de la zona del lacrimal con toallitas húmedas hipoalergénicas o con cualquier otro producto que traigan de su casa y utilicen regularmente.</li>
@@ -103,6 +106,10 @@
 			<a class="footer__link" href="pages/contacto.html"><img class="footer__img" src="../assets/contacto.png"></a>
 		</div>
 	</footer>
+	<script src="../script/login.js" type="module"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
-</html>
+</html> 

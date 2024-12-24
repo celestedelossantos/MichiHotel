@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 	<title>Hospedaje Gatitos</title>
 	<link rel="icon" href="../assets/favicon.png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +20,11 @@
 <body>
 	<header>
 		<a href="index.html"><img src="./assets/logo-oficial.png" alt="gatito-navegacion" /></a>
+		<img class="img__header" src="./assets/menus.png" alt="menu" id="burger-menu">
 		<nav class="nav">
 			<ul>
-				<li class="nav__list"><a class="nav__link" href="index.html">Inicio</a></li>
+				<li class="nav__list"><a id="loginButton" class="nav__link" href="pages/login.html">Login</a></li>
+				<li class="nav__list"><a id="signUpButton" class="nav__link" href="pages/registrarse.html">Sign Up</a></li>
 				<li class="nav__list"><a class="nav__link" href="pages/contacto.html">Contacto</a></li>
 				<li class="nav__list"><a class="nav__link" href="pages/habitaciones.html">Habitaciones</a></li>
 				<li class="nav__list"><a class="nav__link" href="pages/servicios.html">Servicios</a></li>
@@ -60,66 +63,6 @@
 		<section class="reseñas">
 			<h3 class="reseñas__h3">Reseñas</h3>
 			<div class="reseñas__container">
-				<div class="tarjeta">
-					<div class="tarjeta__header">
-						<img class="tarjeta__header__img" src="./assets/fondo--reseña.jpg" alt="tarjeta__image"
-							class="tarjeta__image">
-					</div>
-					<div class="tarjeta__body">
-						<h4 class="tarjeta__body__h4">Sin palabras</h4>
-						<p> Si aman a sus michis y en las vacas no quieren que este solo, traiganlos acá sin dudas. 
-						</p>
-					</div>
-					<div class="tarjeta__footer">
-						<div class="usuario">
-							<img src="./assets/usuario-imagen.jpg" alt="usuario__image" class="usuario__image">
-							<div class="usuario__descripcion">
-								<h5>Laura</h5>
-								<small>hace 2d</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tarjeta">
-					<div class="tarjeta__header">
-						<img class="tarjeta__header__img" src="./assets/fondo--reseña.jpg" alt="tarjeta__image"
-							class="tarjeta__image">
-					</div>
-					<div class="tarjeta__body">
-						<h4 class="tarjeta__body__h4">Recomendadísimo!!</h4>
-						<p>Excelente servicio me encantó! mi michi estaba totalmente fuera de si en ese lugar, le encanto
-						</p>
-					</div>
-					<div class="tarjeta__footer">
-						<div class="usuario">
-							<img src="./assets/usuariomarialaura.png" alt="usuario__image" class="usuario__image">
-							<div class="usuario__descripcion">
-								<h5>Ana Maria</h5>
-								<small>hace 2w</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tarjeta">
-					<div class="tarjeta__header">
-						<img class="tarjeta__header__img" src="./assets/fondo--reseña.jpg" alt="tarjeta__image"
-							class="tarjeta__image">
-					</div>
-					<div class="tarjeta__body">
-						<h4 class="tarjeta__body__h4">Increible!</h4>
-						<p>Excelente servicio. Volvería a elegirlos cada vez que los necesite. Gracias!!!
-						</p>
-					</div>
-					<div class="tarjeta__footer">
-						<div class="usuario">
-							<img src="./assets/usuario axel.png" alt="usuario__image" class="usuario__image">
-							<div class="usuario__descripcion">
-								<h5>Axel</h5>
-								<small>hace 4w</small>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 	</main>
@@ -139,6 +82,11 @@
 			<a class="footer__link" href="pages/contacto.html"><img class="footer__img" src="./assets/contacto.png"></a>
 		</div>
 	</footer>
+	
+	<script src="./script/login.js" type="module"></script>
+	<script src="./script/request.js" type="module"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
